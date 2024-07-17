@@ -1,0 +1,410 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --def-scroler-color: #242D44;
+    --def-display-color: #181F33;
+    --def-bag-color: #3A4663;
+    --white: #ffffff;
+    --def-orange: #D03F2F;
+    --def-gray: #647198;
+    --def-btn-color: #EAE3DC;
+    --lig-bag-color: #E6E6E6;
+    --lig-text-color: #36362C;
+    --lig-orang: #C85402;
+    --lig-gray: #D2CDCD;
+    --lig-btn-color: #E5E4E1;
+    --lig-grin: #378187;
+    --lig-white: #eeeeee;
+    --dark-bag-color: #17062A;
+    --dark-text-color: #FFE53D;
+    --dark-blue: #00DED0;
+    --dark-inp-color: #1E0936;
+    --dark-btn-color: #1E0936;
+    --dark-pibg: #56077C;
+    --font: "League Spartan";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    background-color: var(--def-bag-color);
+    transition: 0,5s;
+}
+
+/* header start */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculator {
+    max-width: 550px;
+    width: 100%;
+    height: 708px;
+    background-color: var(--def-bag-color);
+    padding: 20px 0;
+}
+
+.cal-header {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+.header-logo {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.533px;
+    transition: 0,5s;
+}
+
+.header-logo:hover {
+    color: var(--white);
+}
+
+.light-logo {
+    color: var(--lig-text-color);
+}
+
+.light-logo:hover {
+    color: var(--lig-text-color);
+}
+
+.dark-logo {
+    color: var(--dark-text-color);
+}
+
+.dark-logo:hover {
+    color: var(--dark-text-color);
+}
+
+.header-tem {
+    width: 139px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header-tem-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title-tem {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    transition: 0,5s;
+}
+
+.ligth-title-tem {
+    color: var(--lig-text-color);
+}
+
+.dark-title-tem {
+    color: var(--dark-text-color);
+}
+
+.time-skroler {
+    width: 71px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time-skroler-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-time {
+    width: 12px;
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0,5s;
+}
+
+.light-time-title {
+    color: var(--lig-text-color);
+}
+
+.dark-time-title {
+    color: var(--dark-text-color);
+}
+
+.time-skroler-time {
+    width: 100%;
+    background-color: var(--def-scroler-color);
+    height: 24px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+    transition: 0,5s;
+}
+
+.light-time-skroler-time {
+    background-color: var(--lig-gray);
+}
+
+.dark-time-skroler-time {
+    background-color: var(--dark-btn-color);
+}
+
+.time-skroler-bord {
+    width: 16px;
+    height: 16px;
+    background-color: var(--def-orange);
+    border-radius: 50%;
+    transition: 0,5s;
+}
+
+.dark-time-skroler-bord {
+    background-color: var(--dark-blue);
+}
+
+/* header end */
+/* body start */
+.calc-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    row-gap: 24px;
+}
+
+.display {
+    width: 540px;
+    height: 128px;
+    text-align: end;
+    padding: 40px 35px;
+    background-color: var(--def-display-color);
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.933px;
+    border-radius: 10px;
+    transition: 0,5s;
+}
+
+.light-display {
+    background-color: #eeeeee;
+    color: var(--lig-text-color);
+}
+
+.dark-display {
+    background-color: var(--dark-inp-color);
+    color: var(--dark-text-color);
+}
+
+.calc-btns {
+    width: 100%;
+    height: 480px;
+    background-color: var(--def-scroler-color);
+    display: flex;
+    padding: 32px 30px;
+    gap: 25px;
+    flex-wrap: wrap;
+    transition: 0,5s;
+}
+
+.light-calc-btns {
+    background-color: var(--lig-gray);
+}
+
+.dark-calc-btns {
+    background-color: var(--dark-inp-color);
+}
+
+.nums {
+    max-width: 101px;
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+    background: var(--def-btn-color);
+    box-shadow: 0px -4px 0px 0px #B3A497 inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.btn-def {
+    max-width: 101px;
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+    background: var(--def-btn-color);
+    box-shadow: 0px -4px 0px 0px #B3A497 inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--lig-text-color);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.667px;
+    transition: 0.5s;
+}
+
+.btn-def:hover {
+    background-color: var(--white);
+}
+
+.light-btn-def {
+    background: #E5E4E1;
+    color: #36362C;
+    box-shadow: 0px -4px 0px 0px #A79E91 inset;
+}
+
+.dark-btn-def {
+    background: #331C4D;
+    color: var(--dark-text-color);
+    box-shadow: 0px -4px 0px 0px #881C9E inset;
+}
+
+.delet {
+    width: 101px;
+    height: 64px;
+    border-radius: 10px;
+    background: #647198;
+    box-shadow: 0px -4px 0px 0px #414E73 inset;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.467px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0,5s;
+}
+
+.light-delet {
+    background: var(--lig-grin);
+    color: var(--white);
+    box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+
+.dark-delet {
+    background: #56077C;
+    color: var(--white);
+    box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+}
+
+.big-btn {
+    width: 227px;
+    height: 64px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.467px;
+    transition: 0,5s;
+}
+
+.clear {
+    border-radius: 10px;
+    background: #647198;
+    box-shadow: 0px -4px 0px 0px #414E73 inset;
+    transition: 0.5s;
+
+}
+
+.light-clear {
+    background: #378187;
+    box-shadow: 0px -4px 0px 0px #1B6066 inset;
+}
+
+.dark-clear {
+    background: #56077C;
+    box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+}
+
+.clear:hover {
+    opacity: 0.5;
+}
+
+.calc {
+    border-radius: 10px;
+    background: #D03F2F;
+    box-shadow: 0px -4px 0px 0px #93261A inset;
+    transition: 0.5s;
+}
+
+.calc:hover {
+    opacity: 0.5;
+}
+
+.dark-calc {
+    background: #00DED0;
+    box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+    color: #1A2327;
+}
+
+.light-bag-color {
+    background-color: var(--lig-bag-color);
+}
+
+.dark-bag-color {
+    background-color: var(--dark-bag-color);
+}
+.def-bag-color{
+    background-color: var(--def-bag-color);
+}
